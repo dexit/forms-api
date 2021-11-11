@@ -25,7 +25,8 @@ if (!function_exists('debugger')) {
 
         $logPath = ABSPATH . "wp-content/plugins/forms-api/";
                                 
-        file_put_contents($logPath . 'log_' . date("dmY") . '.log', $prefix . $message . $variable . "\n", FILE_APPEND);
+        // file_put_contents($logPath . 'log_' . date("dmY") . '.log', $prefix . $message . $variable . "\n", FILE_APPEND);
+        file_put_contents($logPath . 'forms-api.log', $prefix . $message . $variable . "\n", FILE_APPEND);
     }
 }
 

@@ -24,6 +24,9 @@
 function forms_api_register_settings()
 {
     require_once('debugger.php');
+
+    debugger("forms_api_register_settings() was called");
+    
     require_once('elementor.php');
     require_once('postFields.php');
     

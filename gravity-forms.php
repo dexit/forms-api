@@ -40,8 +40,8 @@ function submit_placeholder_lead($form)
 	$body = [
 		'api_token'      => 'aq74o1t71XL3Rb4CQLBNsM7r8utTJwkNcLUBRJfOoxsrS1T0XaJq3hrx76Lx',
 		'gform_id'		 => 'placeholder',
-		'remote_addr'	 => $_SERVER['REMOTE_ADDR'],
-		'website'		 => "http://$_SERVER[HTTP_HOST]",
+		'server_remote_addr'	 => $_SERVER['REMOTE_ADDR'],
+		'server_http_host'		 => "http://$_SERVER[HTTP_HOST]",
 		'form_id'		 => $form['id'],
 	];
 
